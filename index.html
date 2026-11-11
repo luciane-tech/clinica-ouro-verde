@@ -7,28 +7,30 @@
 <meta name="description" content="Clínica Veterinária e Pet Shop Ouro Verde em Ijuí - RS. Consultas, vacinas, cirurgias, rações e linha pet com o médico-veterinário Adalberto Carlson Writzl. Agende pelo WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Nunito:wght@400;600;700&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --verde:#0f4a2e; --verde-esc:#0a3520; --verde-med:#1c6b43; --verde-claro:#e6f0e4;
-  --ouro:#f2b61b; --ouro-esc:#d99a00; --ouro-claro:#fdf3d3;
-  --creme:#fbf8ef; --tinta:#16261d; --cinza:#5a6a60; --branco:#fff;
-  --raio:22px; --sombra:0 18px 40px -18px rgba(10,53,32,.35);
+  --verde:#2E7D32; --verde-esc:#17481b; --verde-med:#2E7D32; --verde-claro:#DCEFCF; --salvia:#A5C98B;
+  --ouro:#F2B61B; --ouro-esc:#c98f00; --ouro-claro:rgba(165,201,139,.42);
+  --creme:#F8F7ED; --tinta:#16261d; --cinza:#55655a; --branco:#fff;
+  --raio:22px; --sombra:0 18px 40px -18px rgba(23,72,27,.4);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Nunito Sans',system-ui,sans-serif;color:var(--tinta);background:var(--creme);line-height:1.6;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;letter-spacing:-.01em;text-wrap:balance}
+body{font-family:'Nunito',system-ui,sans-serif;color:var(--tinta);background:var(--creme);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Poppins',system-ui,sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
+h3{font-weight:600;letter-spacing:-.01em}
+.especial{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:500;letter-spacing:0}
 a{color:inherit;text-decoration:none}
 img,svg{max-width:100%;display:block}
 .wrap{width:min(1140px,100% - 40px);margin-inline:auto}
 section{padding:88px 0}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--verde-med)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins',sans-serif;font-weight:600;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--verde-med)}
 .eyebrow::before{content:"";width:26px;height:3px;border-radius:3px;background:var(--ouro)}
-h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:14px 0 16px;color:var(--verde)}
+h2{font-size:clamp(1.75rem,3.6vw,2.55rem);margin:14px 0 16px;color:var(--verde)}
 .lead{color:var(--cinza);font-size:1.08rem;max-width:60ch}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:800;font-size:1rem;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0}
+.btn{position:relative;overflow:hidden;font-family:'Nunito',sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:1rem;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0}
 .btn:hover{transform:translateY(-2px)}
 .btn-ouro{background:var(--ouro);color:var(--verde-esc);box-shadow:0 12px 26px -12px rgba(217,154,0,.9)}
 .btn-ouro:hover{background:#ffc530}
@@ -38,10 +40,10 @@ h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:14px 0 16px;color:var(--verde)}
 .btn svg{width:20px;height:20px;flex:none}
 
 /* Header */
-header{position:sticky;top:0;z-index:50;background:rgba(251,248,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,74,46,.08)}
+header{position:sticky;top:0;z-index:50;background:rgba(248,247,237,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,74,46,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
-.logo{display:flex;align-items:center;gap:12px;font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;color:var(--verde);line-height:1.1}
-.logo small{display:block;font-family:'Nunito Sans',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ouro-esc)}
+.logo{display:flex;align-items:center;gap:12px;font-family:'Poppins',system-ui,sans-serif;font-weight:700;font-size:1.15rem;color:var(--verde);line-height:1.1}
+.logo small{display:block;font-family:'Nunito',system-ui,sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ouro-esc)}
 .logo-mark{width:46px;height:46px;border-radius:50%;background:var(--verde);display:grid;place-items:center;flex:none}
 .logo-mark svg{width:26px;height:26px;fill:var(--ouro)}
 .menu{display:flex;align-items:center;gap:28px;font-weight:700;font-size:.95rem}
@@ -52,26 +54,33 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,239,.92);backdro
 
 /* Hero */
 .hero{background:var(--verde);color:#fff;padding:76px 0 0;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(242,182,27,.22),transparent 65%)}
+.hero::before{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(242,182,27,.26),transparent 65%);transform:translateY(var(--py,0))}
+.hero::after{content:"";position:absolute;left:-160px;bottom:-220px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(165,201,139,.3),transparent 65%)}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative}
 .hero .eyebrow{color:var(--ouro)}
-.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);margin:18px 0 20px}
-.hero h1 em{font-style:italic;color:var(--ouro)}
-.hero p{font-size:1.14rem;color:rgba(255,255,255,.84);max-width:52ch}
+.hero h1{font-size:clamp(2.1rem,4.8vw,3.5rem);margin:18px 0 20px}
+.hero h1 em{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:600;letter-spacing:0;color:var(--ouro);font-size:1.08em}
+.hero p{font-size:1.14rem;color:rgba(255,255,255,.9);max-width:52ch}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:32px 0 30px}
-.hero-info{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:.95rem;color:rgba(255,255,255,.82);padding-bottom:76px}
+.hero-info{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:.95rem;color:rgba(255,255,255,.86);padding-bottom:70px}
 .hero-info span{display:flex;align-items:center;gap:8px}
 .hero-info svg{width:18px;height:18px;stroke:var(--ouro);fill:none;stroke-width:2}
-.hero-art{position:relative;align-self:end}
-.hero-art svg{width:100%;height:auto}
-.selo{position:absolute;left:-6px;top:18%;background:#fff;color:var(--verde);border-radius:18px;padding:14px 18px;box-shadow:var(--sombra);font-weight:800;font-size:.92rem;display:flex;align-items:center;gap:10px}
+.hero-art{position:relative;padding:10px 10px 70px}
+.hero-foto{position:relative;aspect-ratio:1/1.05;animation:flutua 7s ease-in-out infinite}
+.hero-foto::before{content:"";position:absolute;inset:-14px;background:var(--ouro);border-radius:58% 42% 55% 45%/50% 48% 52% 50%;animation:forma 12s ease-in-out infinite;transform:rotate(-6deg)}
+.hero-foto::after{content:"";position:absolute;inset:-30px;border:2px dashed rgba(165,201,139,.7);border-radius:50%;animation:gira 40s linear infinite}
+.hero-foto img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;border-radius:58% 42% 55% 45%/50% 48% 52% 50%;animation:forma 12s ease-in-out infinite;background:var(--salvia)}
+.pata{position:absolute;font-size:2rem;opacity:.16;animation:flutua 6s ease-in-out infinite;pointer-events:none}
+.selo{position:absolute;z-index:2;left:-14px;top:12%;animation:flutua 5s ease-in-out -2s infinite;background:#fff;color:var(--verde);border-radius:18px;padding:14px 18px;box-shadow:var(--sombra);font-weight:700;font-size:.92rem;display:flex;align-items:center;gap:10px}
 .selo i{width:38px;height:38px;border-radius:50%;background:var(--ouro-claro);display:grid;place-items:center;font-style:normal;font-size:1.1rem}
 .selo small{display:block;font-weight:600;color:var(--cinza);font-size:.78rem}
 
 /* Faixa */
-.faixa{background:var(--ouro);color:var(--verde-esc);padding:18px 0}
-.faixa ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 28px;font-weight:800}
-.faixa li{display:flex;align-items:center;gap:9px}
+.faixa{background:var(--ouro);color:var(--verde-esc);padding:18px 0;overflow:hidden}
+.trilho{display:flex;width:max-content;animation:corre 38s linear infinite}
+.faixa:hover .trilho{animation-play-state:paused}
+.faixa ul{list-style:none;display:flex;flex:none;gap:54px;padding-right:54px;font-family:'Poppins',sans-serif;font-weight:600;white-space:nowrap}
+.faixa li{display:flex;align-items:center;gap:10px}
 .faixa li::before{content:"🐾";font-size:.95rem}
 
 /* Serviços */
@@ -84,27 +93,30 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,239,.92);backdro
 .card:nth-child(even) .ico{background:var(--ouro-claro)}
 .card h3{font-size:1.3rem;color:var(--verde);margin-bottom:8px}
 .card p{color:var(--cinza);font-size:.97rem}
-.card a{display:inline-block;margin-top:16px;font-weight:800;color:var(--verde-med);font-size:.92rem}
+.card a{display:inline-block;margin-top:16px;font-weight:700;color:var(--verde-med);font-size:.92rem}
 .card a:hover{color:var(--ouro-esc)}
 
 /* Sobre */
 .sobre{background:#fff}
 .sobre-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
-.retrato{background:linear-gradient(160deg,var(--verde-med),var(--verde-esc));border-radius:32px;aspect-ratio:4/5;position:relative;overflow:hidden;display:grid;place-items:center;color:rgba(255,255,255,.75);text-align:center;padding:30px}
-.retrato svg{width:120px;height:120px;stroke:var(--ouro);fill:none;stroke-width:1.4;margin:0 auto 16px}
-.retrato small{font-size:.85rem}
-.retrato::after{content:"";position:absolute;inset:14px;border:2px dashed rgba(242,182,27,.45);border-radius:22px;pointer-events:none}
+.retrato{position:relative;max-width:440px;width:100%;margin-inline:auto}
+.retrato::before{content:"";position:absolute;inset:22px -18px -18px 22px;border-radius:32px;background:var(--ouro);transition:transform .5s}
+.retrato::after{content:"🐾";position:absolute;right:-22px;top:-22px;width:72px;height:72px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:1.7rem;box-shadow:var(--sombra);animation:flutua 5s ease-in-out infinite}
+.retrato:hover::before{transform:translate(8px,8px)}
+.retrato img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top center;border-radius:32px;background:linear-gradient(160deg,var(--salvia),var(--verde));box-shadow:var(--sombra)}
+.frase{margin:22px 0 0;padding-left:18px;border-left:4px solid var(--ouro);font-size:1.35rem;color:var(--verde);line-height:1.35}
 .check{list-style:none;margin:26px 0 32px;display:grid;gap:14px}
 .check li{display:flex;gap:14px;align-items:flex-start}
-.check li::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--ouro);color:var(--verde-esc);font-weight:800;display:grid;place-items:center;font-size:.85rem;margin-top:2px}
+.check li::before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--ouro);color:var(--verde-esc);font-weight:700;display:grid;place-items:center;font-size:.85rem;margin-top:2px}
 .check b{color:var(--verde)}
 
 /* Cuidados */
 .dicas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .dica{border-radius:var(--raio);padding:30px;background:var(--verde);color:#fff;position:relative;overflow:hidden}
 .dica:nth-child(2),.dica:nth-child(4){background:var(--ouro);color:var(--verde-esc)}
-.dica:nth-child(3),.dica:nth-child(5){background:var(--verde-claro);color:var(--verde-esc)}
-.dica span{font-family:'Fraunces',serif;font-size:2.6rem;font-weight:700;opacity:.3;line-height:1}
+.dica:nth-child(3){background:var(--salvia);color:var(--verde-esc)}
+.dica:nth-child(5){background:var(--verde-claro);color:var(--verde-esc)}
+.dica span{font-family:'Poppins',system-ui,sans-serif;font-size:2.6rem;font-weight:700;opacity:.3;line-height:1}
 .dica h3{font-size:1.35rem;margin:10px 0 8px}
 .dica p{font-size:.97rem;opacity:.9}
 .dica.cta{background:#fff;border:2px dashed var(--verde-med);color:var(--verde);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px}
@@ -125,7 +137,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,239,.92);backdro
 .faq{max-width:820px;margin-inline:auto}
 .faq .cab{justify-content:center;text-align:center}
 details{background:#fff;border-radius:18px;border:1px solid rgba(15,74,46,.1);margin-bottom:12px;overflow:hidden}
-summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:800;color:var(--verde);display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:1.03rem}
+summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:700;color:var(--verde);display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:1.03rem}
 summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font-size:1.5rem;color:var(--ouro-esc);transition:transform .2s;flex:none}
 details[open] summary::after{transform:rotate(45deg)}
@@ -139,7 +151,7 @@ details p{padding:0 24px 22px;color:var(--cinza)}
 a.linha:hover{border-color:var(--ouro)}
 .linha .ico{margin:0;width:48px;height:48px;border-radius:14px;flex:none}
 .linha .ico svg{width:22px;height:22px}
-.linha small{display:block;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--cinza)}
+.linha small{display:block;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cinza)}
 .linha b{color:var(--verde);font-size:1.03rem}
 .mapa{border-radius:28px;overflow:hidden;min-height:440px;box-shadow:var(--sombra);background:var(--verde-claro)}
 .mapa iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
@@ -161,9 +173,42 @@ footer{background:var(--verde-esc);color:rgba(255,255,255,.72);padding:44px 0 30
 .zap svg{width:32px;height:32px;fill:#fff}
 @keyframes pulso{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
 
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}
-.reveal.on{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.zap{animation:none}html{scroll-behavior:auto}}
+.prog{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--ouro);transform-origin:0 50%;transform:scaleX(0);z-index:70}
+header{transition:box-shadow .3s}
+header.rolou{box-shadow:0 10px 30px -18px rgba(23,72,27,.5)}
+.menu a:not(.btn){position:relative}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:100%;background:var(--ouro);transform:scaleX(0);transform-origin:0 50%;transition:transform .3s}
+.menu a:not(.btn):hover::after{transform:scaleX(1)}
+.btn::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg)}
+.btn:hover::after{animation:brilho .8s}
+.ico{transition:transform .35s}
+.card:hover .ico{transform:rotate(-8deg) scale(1.12)}
+.dica{transition:transform .3s,box-shadow .3s}
+.dica:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:var(--sombra)}
+.tags span{transition:transform .2s,background .2s}
+.tags span:hover{transform:translateY(-3px);background:rgba(255,255,255,.2)}
+.linha{transition:border-color .2s,transform .2s}
+a.linha:hover{transform:translateX(6px)}
+.hero-grid>div:first-child>*{animation:sobe .8s cubic-bezier(.2,.7,.2,1) both}
+.hero-grid>div:first-child>:nth-child(2){animation-delay:.1s}
+.hero-grid>div:first-child>:nth-child(3){animation-delay:.2s}
+.hero-grid>div:first-child>:nth-child(4){animation-delay:.3s}
+.hero-grid>div:first-child>:nth-child(5){animation-delay:.4s}
+.hero-art{animation:entra 1s cubic-bezier(.2,.7,.2,1) .2s both}
+@keyframes sobe{from{opacity:0;transform:translateY(28px)}}
+@keyframes entra{from{opacity:0;transform:scale(.88) translateX(30px)}}
+@keyframes flutua{50%{transform:translateY(-12px)}}
+@keyframes gira{to{transform:rotate(360deg)}}
+@keyframes forma{50%{border-radius:44% 56% 42% 58%/55% 44% 56% 45%}}
+@keyframes corre{to{transform:translateX(-50%)}}
+@keyframes brilho{to{left:130%}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.sobre-grid>.reveal:first-child,.contato-grid>.reveal:first-child{transform:translateX(-40px)}
+.sobre-grid>.reveal:last-child,.contato-grid>.reveal:last-child{transform:translateX(40px)}
+.reveal.on{opacity:1;transform:none!important}
+.card.on:hover{transform:translateY(-6px)!important}
+.dica.on:hover{transform:translateY(-6px) rotate(-.6deg)!important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none!important}html{scroll-behavior:auto}}
 
 @media (max-width:980px){
   .cards{grid-template-columns:repeat(2,1fr)}
@@ -171,7 +216,8 @@ footer{background:var(--verde-esc);color:rgba(255,255,255,.72);padding:44px 0 30
   .hero-grid,.sobre-grid,.contato-grid,.pet{grid-template-columns:1fr}
   .hero-art{max-width:420px;margin-inline:auto}
   .hero-info{padding-bottom:30px}
-  .retrato{max-width:380px;margin-inline:auto;width:100%}
+  .retrato{max-width:340px}
+  .hero-art{padding-bottom:50px}
   .pet{padding:40px 28px}
   .menu{position:absolute;top:74px;left:0;right:0;background:var(--creme);flex-direction:column;align-items:stretch;gap:0;padding:10px 20px 22px;border-bottom:1px solid rgba(15,74,46,.1);display:none}
   .menu.aberto{display:flex}
@@ -184,13 +230,13 @@ footer{background:var(--verde-esc);color:rgba(255,255,255,.72);padding:44px 0 30
   .cards,.dicas{grid-template-columns:1fr}
   .hero{padding-top:52px}
   .hero-cta .btn{width:100%}
-  .faixa ul{justify-content:flex-start}
-  .selo{left:0;top:6%}
+  .selo{left:-6px;top:4%}
   .mapa,.mapa iframe{min-height:340px}
 }
 </style>
 </head>
 <body>
+<div class="prog" id="prog"></div>
 
 <header>
   <div class="wrap nav">
@@ -213,6 +259,7 @@ footer{background:var(--verde-esc);color:rgba(255,255,255,.72);padding:44px 0 30
 <main id="topo">
 
 <section class="hero">
+  <span class="pata" style="left:4%;top:12%">🐾</span><span class="pata" style="left:46%;bottom:10%;animation-delay:-2s;font-size:1.5rem">🐾</span><span class="pata" style="right:5%;top:8%;animation-delay:-4s;font-size:2.6rem">🐾</span>
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow">Clínica veterinária e pet shop em Ijuí - RS</span>
@@ -232,42 +279,13 @@ footer{background:var(--verde-esc);color:rgba(255,255,255,.72);padding:44px 0 30
     </div>
     <div class="hero-art">
       <div class="selo"><i>🩺</i><span>Atendimento veterinário<small>com hora marcada</small></span></div>
-      <svg viewBox="0 0 440 420" role="img" aria-label="Ilustração de um cachorro e um gato">
-        <ellipse cx="220" cy="410" rx="210" ry="120" fill="#1c6b43"/>
-        <!-- cachorro -->
-        <g>
-          <path d="M110 420c0-90 20-150 90-150s95 60 95 150z" fill="#f2b61b"/>
-          <ellipse cx="118" cy="205" rx="26" ry="58" transform="rotate(18 118 205)" fill="#d99a00"/>
-          <ellipse cx="282" cy="205" rx="26" ry="58" transform="rotate(-18 282 205)" fill="#d99a00"/>
-          <ellipse cx="200" cy="205" rx="78" ry="74" fill="#f2b61b"/>
-          <ellipse cx="200" cy="236" rx="44" ry="34" fill="#fdf3d3"/>
-          <circle cx="172" cy="192" r="8" fill="#0a3520"/><circle cx="228" cy="192" r="8" fill="#0a3520"/>
-          <circle cx="175" cy="189" r="2.500" fill="#fff"/><circle cx="231" cy="189" r="2.500" fill="#fff"/>
-          <ellipse cx="200" cy="222" rx="13" ry="9" fill="#0a3520"/>
-          <path d="M200 231v10m0 0c-6 9-18 8-21-1m21 1c6 9 18 8 21-1" stroke="#0a3520" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <path d="M192 246h16v12a8 8 0 0 1-16 0z" fill="#e8667a"/>
-          <rect x="150" y="282" width="100" height="14" rx="7" fill="#0f4a2e"/>
-          <circle cx="200" cy="304" r="10" fill="#fff"/><path d="M200 299v10m-5-5h10" stroke="#0f4a2e" stroke-width="2.500" stroke-linecap="round"/>
-        </g>
-        <!-- gato -->
-        <g>
-          <path d="M275 420c0-70 12-112 62-112s66 42 66 112z" fill="#fbf8ef"/>
-          <path d="M292 232l-6-46 38 22zM384 232l6-46-38 22z" fill="#fbf8ef"/>
-          <path d="M296 222l-3-22 18 11zM380 222l3-22-18 11z" fill="#f4b8c0"/>
-          <ellipse cx="338" cy="262" rx="56" ry="50" fill="#fbf8ef"/>
-          <ellipse cx="318" cy="256" rx="6" ry="8" fill="#0a3520"/><ellipse cx="358" cy="256" rx="6" ry="8" fill="#0a3520"/>
-          <path d="M333 274h10l-5 6z" fill="#e8667a"/>
-          <path d="M338 280c-4 7-11 6-13 1m13-1c4 7 11 6 13 1" stroke="#0a3520" stroke-width="2.500" fill="none" stroke-linecap="round"/>
-          <path d="M300 272l-24-4m24 10l-22 6m98-12l24-4m-24 10l22 6" stroke="#0a3520" stroke-width="2" stroke-linecap="round" opacity=".45"/>
-          <rect x="300" y="306" width="76" height="11" rx="5.500" fill="#f2b61b"/>
-        </g>
-      </svg>
+      <div class="hero-foto"><img src="https://saudezen.com/wp-content/uploads/2026/11/download-1.jpg" alt="Clínica Veterinária Ouro Verde" width="600" height="630" fetchpriority="high"></div>
     </div>
   </div>
 </section>
 
 <div class="faixa">
-  <div class="wrap"><ul><li>Consultas</li><li>Vacinas</li><li>Cirurgias</li><li>Rações</li><li>Linha pet</li></ul></div>
+  <div class="trilho" id="trilho"><ul><li>Consultas</li><li>Vacinas</li><li>Cirurgias</li><li>Rações</li><li>Linha pet</li><li>Cuidado com carinho</li></ul></div>
 </div>
 
 <section id="servicos">
@@ -311,16 +329,13 @@ footer{background:var(--verde-esc);color:rgba(255,255,255,.72);padding:44px 0 30
 <section class="sobre" id="sobre">
   <div class="wrap sobre-grid">
     <div class="retrato reveal">
-      <!-- SUBSTITUIR por foto real do Dr. Adalberto ou da fachada da clínica -->
-      <div>
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.400 3.600-7 8-7s8 2.600 8 7"/></svg>
-        <small>Espaço para foto do veterinário<br>ou da fachada da clínica</small>
-      </div>
+      <img src="https://saudezen.com/wp-content/uploads/2026/11/medico.png" alt="Médico-veterinário Adalberto Carlson Writzl" width="440" height="550" loading="lazy">
     </div>
     <div class="reveal">
       <span class="eyebrow">A clínica</span>
       <h2>Seu pet nas mãos de quem cuida com responsabilidade.</h2>
       <p class="lead">A Veterinária Ouro Verde é uma clínica veterinária e pet shop no centro de Ijuí, sob os cuidados do médico-veterinário <strong>Adalberto Carlson Writzl</strong>. Aqui, cada animal é atendido com atenção, e cada tutor sai sabendo exatamente como cuidar do seu companheiro.</p>
+      <p class="frase especial">Prevenir é a forma mais bonita de cuidar.</p>
       <ul class="check">
         <li><span><b>Atendimento próximo.</b> Você fala direto com quem vai cuidar do seu pet.</span></li>
         <li><span><b>Prevenção em primeiro lugar.</b> Vacinas, check-ups e orientação para evitar problemas antes que apareçam.</span></li>
@@ -433,6 +448,7 @@ footer{background:var(--verde-esc);color:rgba(255,255,255,.72);padding:44px 0 30
     <div class="copy">
       <span>© <span id="ano">2026</span> Clínica Veterinária Ouro Verde · Rua 13 de Maio, 1125 – Centro, Ijuí - RS</span>
       <span>Médico-veterinário responsável: Adalberto Carlson Writzl</span>
+      <span style="flex-basis:100%;text-align:center;padding-top:14px;opacity:.85">Criado por <b style="color:var(--ouro)">Life Creative</b></span>
     </div>
   </div>
 </footer>
@@ -446,8 +462,12 @@ const b=document.getElementById('burger'),m=document.getElementById('menu');
 b.addEventListener('click',()=>{const a=m.classList.toggle('aberto');b.setAttribute('aria-expanded',a)});
 m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('aberto');b.setAttribute('aria-expanded',false)}));
 document.getElementById('ano').textContent=new Date().getFullYear();
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=e.target;t.classList.add('on');io.unobserve(t);setTimeout(()=>t.style.transitionDelay='',1200)}}),{threshold:.12});
+document.querySelectorAll('.cards,.dicas,.info,.faq').forEach(g=>[...g.querySelectorAll('.reveal,.linha')].forEach((el,i)=>{el.classList.add('reveal');el.style.transitionDelay=(i%4*110)+'ms'}));
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const tr=document.getElementById('trilho'),ul=tr.innerHTML;tr.innerHTML=ul.repeat(8);[...tr.children].slice(1).forEach(u=>u.setAttribute('aria-hidden','true'));
+const hd=document.querySelector('header'),pg=document.getElementById('prog'),hero=document.querySelector('.hero');let tk=false;
+addEventListener('scroll',()=>{if(tk)return;tk=true;requestAnimationFrame(()=>{const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;pg.style.transform='scaleX('+(h>0?y/h:0)+')';hd.classList.toggle('rolou',y>10);hero.style.setProperty('--py',(y*.25)+'px');tk=false})},{passive:true});
 </script>
 </body>
 </html>
